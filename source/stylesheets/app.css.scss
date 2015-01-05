@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@mixin speaker-sponsor-width($width) {
+  // #speakers .content { width: $width }
+  .speaker-list { width: $width };
+  .sponsor-list { width: $width };
+};
+
+@media only screen and (min-width : 200px) {
+  @include speaker-sponsor-width(200px);
+};
+@media only screen and (min-width : 400px) {
+  @include speaker-sponsor-width(400px);
+};
+@media only screen and (min-width : 600px) {
+  @include speaker-sponsor-width(600px);
+};
+@media only screen and (min-width : 800px) {
+  @include speaker-sponsor-width(800px);
+};
+@media only screen and (min-width : 1000px) {
+  @include speaker-sponsor-width(1000px);
+};
+@media only screen and (min-width : 1200px) {
+  @include speaker-sponsor-width(auto);
+};
+// @media only screen and (min-width : 1400px) {
+//   @include speaker-sponsor-width(1400px);
+// };
+// @media only screen and (min-width : 1600px) {
+//   @include speaker-sponsor-width(1600px);
+// };
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Book.woff);
+};
+
+$blue:   #3CA0E7;
+$green:  #D9E021;
+$pink:   #EE2C7B;
+$purple: #3B1D76;
+$fspink: #EE2A7B;
+$red:    #B71234;
+$teal:   #3EE1Cf;
+
+@import
+  "./font-awesome/font-awesome.min.css",
+  "normalize",
+  "nav",
+  "header",
+  "about",
+  "speakers",
+  "sponsors",
+  "agenda",
+  "footer";
+
+body{font-family:"Avenir", sans-serif}.content h1{font-weight:bold}h1{margin:0 0 20px 0;font-family:"Avenir", sans-serif;text-transform:uppercase;font-weight:600}@media only screen and (max-device-width: 480px){#about .content,#speakers .content,#sponsors .content{max-width:100%}}

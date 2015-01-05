@@ -1,0 +1,47 @@
+---
+title: Agenda - Security Through Innovation Summit
+---
+
+= partial "nav"
+
+#agenda
+  = image_tag "computer.png", class: "computer"
+  = image_tag "cloud.png", class: "cloud"
+  = image_tag "pie_chart.png", class: "pie-chart"
+  = image_tag "lock.png", class: "lock"
+  = image_tag "gear.png", class: "gear"
+  %h1 Agenda
+  .agenda-list
+    - data.agenda.each do |a|
+      .agenda-item
+        - if a.title
+          %h2= a.title
+          - if a.breakout
+            %span.agenda-time= a.sessions.first.time
+          %br
+        - if !a.breakout
+          - a.sessions.each do |se|
+            %span.agenda-time= se.time
+            %br
+            %span.agenda-title= se.title
+            %br
+            - if se.speakers
+              - se.speakers.each do |sp|
+                <span class="agenda-name">#{sp.name}</span>,
+                %span.agenda-name-title= sp.title
+                %br
+            %br
+
+        - else
+          - a.sessions.each do |se|
+            / %span.agenda-time= se.time
+            / %br
+            - se.titles.each do |t|
+              %span.agenda-title= t
+              %br
+          %br
+        / %hr
+    %br
+
+
+= partial "footer"

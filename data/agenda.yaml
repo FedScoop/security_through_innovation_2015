@@ -1,0 +1,78 @@
+---
+- title: false
+  breakout: false
+  sessions:
+  - time: 7:30 a.m. - 8:30 a.m.
+    title: Registration and Networking Breakfast
+    speakers:
+  - time: 8:30 a.m. - 8:35 a.m.
+    title: Welcome
+    speakers:
+    - name: Goldy Kamali
+      title: "CEO, FedScoop"
+  - time: 8:35 a.m. - 8:45 a.m.
+    title: Opening Remarks
+    speakers:
+    - name: Ken Karsten
+      title: "VP of Federal Sales, Intel Security"
+  - time: 8:45 a.m. - 9:10 a.m.
+    title: Keynote Address
+    speakers:
+    - name: Chris Young
+      title: "SVP &amp; GM, Intel Security"
+  - time: 9:10 a.m. - 9:30 a.m.
+    title: Keynote Address
+    speakers:
+  - time: 9:30 a.m. - 10:00 a.m.
+    title: Cybersecurity Leadership Panel
+    speakers:
+  - time: 10:00 a.m. - 10:20 a.m.
+    title: Networking Break
+    speakers:
+- title: Breakout Sessions I
+  breakout: true
+  sessions:
+  - time: 10:20 a.m. - 11:10 a.m.
+    titles:
+    - "Cloud Trends 2015 &amp; How to Enhance Security"
+    - "Virtualization: Building a Trusted Infrastructure That Works"
+    - "Technology Demo"
+- title: Breakout Sessions II
+  breakout: true
+  sessions:
+  - time: 11:10 a.m. - 12:00 p.m.
+    titles:
+    - "Next Generation Firewall: The Application Awareness Imperative"
+    - "Securing the Bring Your Own App Environment"
+    - "Perfect Storm: Advanced Malware &amp; the IoT"
+- title: false
+  breakout: false
+  sessions:
+  - time: 12:00 p.m. - 1:00 p.m.
+    title: Networking Lunch
+    speakers:
+- title: Breakout Sessions III
+  breakout: true
+  sessions:
+  - time: 1:10 p.m. - 1:50 p.m.
+    titles:
+    - "FedRamp &amp; Rogue Clouds: Who’s Winning"
+    - "Microsoft Office 365"
+    - "Technology Demo"
+- title: false
+  breakout: false
+  sessions:
+  - time: 1:50 p.m. - 2:30 p.m.
+    title: "Everything is IP-Enabled!"
+    speakers:
+  - time: 2:30 p.m. - 2:50 p.m.
+    title: "Fireside Chat"
+    speakers:
+  - time: 2:50 p.m. - 3:10 p.m.
+    title: Closing Keynote Address
+    speakers:
+  - time: 3:10 p.m. - 3:15 p.m.
+    title: Closing Remarks
+    speakers:
+    - name: Ken Karsten
+      title: "VP of Federal Sales, Intel Security"

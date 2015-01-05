@@ -1,0 +1,75 @@
+@mixin background-images {
+  position: fixed;
+  z-index: -10;
+  opacity: 0.50;
+}
+
+#agenda {
+  text-align: center;
+  padding-top: 100px;
+  .agenda-list {
+    text-shadow: 0 0 5px white;
+    text-align: center;
+    /* hr:last-of-type {
+      display: none;
+    } */
+    .agenda-item {
+      margin-bottom: 50px;
+      br:last-of-type {
+        display: none;
+      }
+      .agenda-title {
+        color: $red;
+      }
+      .agenda-name {
+        font-weight: bold;
+      }
+    }
+  }
+  h1 {
+    color: $blue;
+    font-weight: bold;
+  }
+  /* h2 {
+    margin: 40px 0 0 0;
+  } */
+  /* hr {
+    margin: 20px auto;
+    width: 50%;
+  } */
+  .computer {
+    @include background-images;
+    right: 10px;
+    margin-top: 50px;
+  }
+  .cloud {
+    @include background-images;
+    left: 10px;
+    margin-top: 220px;
+  }
+  .pie-chart {
+    @include background-images;
+    left: -50px;
+    margin-top: 360px;
+  }
+  .lock {
+    @include background-images;
+    right: -120px;
+    margin-top: 650px;
+  }
+  .gear {
+    @include background-images;
+    left: 10px;
+    margin-top: 950px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .computer,
+  .cloud,
+  .pie-chart,
+  .lock,
+  .gear {
+    display: none;
+  }
+}

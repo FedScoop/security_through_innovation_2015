@@ -1,0 +1,58 @@
+/* INITIAL STUFF */
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Book.eot);
+};
+
+$blue:   #3CA0E7;
+$green:  #D9E021;
+$pink:   #EE2C7B;
+$purple: #3B1D76;
+$fspink: #EE2A7B;
+$red:    #B71234;
+$teal:   #3EE1Cf;
+
+/* HEADER */
+
+img.mobile {
+  display: none;
+}
+
+.header-content {
+  text-align: center;
+  .date {
+    margin-top: -85px;
+  }
+}
+
+img.desktop {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ABOUT */
+
+// #about {
+//   padding: 20px 0;
+// }
+
+img.about-m {
+  margin-top: -75px;
+}
+
+/* SPEAKERS */
+
+// #speakers {
+//   padding: 20px 0;
+// }
+
+/* SPONSORS */
+
+// #sponsors {
+//   padding: 20px 0;
+// }
+
+img.rss {
+  margin-top: -74.5px;
+}

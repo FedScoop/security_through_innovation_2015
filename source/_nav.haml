@@ -1,0 +1,22 @@
+%nav
+  %ul.nav
+    %li
+      = link_to "About", url_for("/index.html") + '#about', class: "link-about"
+    %li
+      = link_to "Speakers", url_for("/index.html") + "#speakers", class: "link-speakers"
+    %li
+      = link_to "Sponsors", url_for("/index.html") + "#sponsors", class: "link-sponsors"
+    %li
+      = link_to "Agenda", "agenda.html", class: "link-agenda"
+    %li.last.register
+      %a{ href: "https://www.regonline.com/securitysummit15" } Register
+    %ul.social
+      %li
+        %a{ href: "https://www.facebook.com/fedscoop", target: "_blank" }
+          %i.fa.fa-facebook
+      %li
+        %a{ href: "https://twitter.com/fedscoop", target: "_blank" }
+          %i.fa.fa-twitter
+      %li
+        %a{ href: "https://www.youtube.com/user/FedScoop", target: "_blank" }
+          %i.fa.fa-youtube-play

@@ -1,0 +1,28 @@
+<!doctype html>
+<!--[if lte IE8]>
+
+<[endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.page.title || "Security Through Innovation Summit" %></title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <%= stylesheet_link_tag "app"%>
+    <!--[if lte IE8]>
+    <%= stylesheet_link_tag "ie-styles" %>
+    <script type="text/javascript">
+      document.createElement('nav');
+      document.createElement('section');
+      var badBrowser = true;
+    </script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <%= javascript_include_tag "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+  </body>
+</html>

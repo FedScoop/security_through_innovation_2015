@@ -1,0 +1,51 @@
+#speakers {
+  background: $teal;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 10;
+  padding-bottom: 100px;
+  h1 {
+    text-align: left;
+    color: black;
+  }
+  p {
+    text-align: left;
+  }
+  .content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .speaker-list {
+    list-style: none;
+    // max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    .speaker {
+      display: inline-block;
+      text-align: center;
+      width: 190px;
+      padding: 10px;
+      position: relative;
+      .speaker-img {
+        width: 100%;
+      }
+      .speaker-name {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      img {
+        border-radius: 100px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  #speakers {
+    padding-bottom: 50px;
+    h1 {
+      padding-left: 10px;
+    }
+  }
+}

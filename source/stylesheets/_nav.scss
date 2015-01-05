@@ -1,0 +1,94 @@
+nav {
+  background: black;
+  text-align: center;
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline;
+      padding: 0 10px;
+      line-height: 80px;
+      &:first-child { padding-left: 0 }
+      &.last { padding-right: 0; }
+      a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 20px;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  // float: right;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  }
+  i {
+    line-height: 28px;
+    width: 27px; height: 27px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 13.5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+    &:hover {
+      background-color: $red;
+      color: white;
+    }
+  }
+  .fa-facebook:before {
+    padding-top: 4px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .social {
+    top: auto;
+    right: auto;
+    position: static;
+    margin: 0 auto;
+  }
+  .last {
+    padding: 0;
+  }
+  nav {
+    line-height: 20px;
+    padding-top: 10px;
+    ul {
+      li {
+        height: 20px;
+        line-height: 20px;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+.register a {
+  color: $red;
+  &:hover {
+    color: grey;
+  }
+}

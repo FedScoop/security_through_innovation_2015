@@ -1,0 +1,58 @@
+---
+title: Security Through Innovation Summit
+---
+
+= partial "nav"
+
+%section#header
+  .header-content.parallax
+    = image_tag "banner.png", class: "desktop"
+    = image_tag "mobile-banner.png", class: "mobile"
+    .date
+      March 17, 2015 • Ritz-Carlton • Pentagon City, Arlington, VA
+
+%section#about
+  .content
+    %h1 About
+    %p
+      The Security Through Innovation Summit will bring together top IT leaders and innovators from the Gov IT community to collaborate and discuss leading trends in technology. Topics will include: Innovation, Mobility, Big Data Analytics, Virtualization, Cloud and Cybersecurity
+    %p.about-date
+      March 17, 2015 / 7:30 a.m. – 3:30 p.m.
+      %br
+      The Ritz-Carlton, Pentagon City
+      %br
+      Government: FREE
+      %br
+      Industry: $195
+    %a.big-button{ href: "https://www.regonline.com/securitysummit15", target: "_blank" } REGISTER NOW
+  = image_tag "m.png", class: "about-m"
+
+
+%section#speakers
+  .content
+    %h1 Speakers
+    / %h2{ style: "text-align:left;" } Coming Soon
+    %ul.speaker-list.isotope
+      - data.speakers.each do |s|
+        %li.speaker.item
+          / %img.speaker-img{ src: "#{s.i}" }
+          = image_tag "speakers/" + s.i, class: "speaker-img"
+          %br
+          %span.speaker-name= s.n
+          %br
+          %span.speaker-title= s.t
+          %br
+          %span.speaker-agency= s.a
+
+-#%section#sponsors
+  = image_tag "rss.png", class: "rss"
+  .content
+    %h1 Sponsors
+    / %h2{ style: "text-align:left;" } Coming Soon
+    %ul.sponsor-list.isotope.diamond
+      - data.sponsors.diamond.each do |s|
+        %li.sponsor.item
+          - link_to s.u, target: "_blank" do
+            = image_tag "sponsors/" + s.i, title: s.n, alt: s.n
+
+= partial "footer"
